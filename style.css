@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  /* MODO ESCURO */
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  
+  /* HEADER */
+  header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    color: white;
+  }
+  
+  header button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* MAIN */
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* CARDS */
+  .card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 0.8s forwards;
+  }
+  
+  /* DARK CARD */
+  body.dark .card {
+    background: #1e1e1e;
+  }
+  
+  /* ANIMAÇÃO */
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* LISTA */
+  ul {
+    padding-left: 20px;
+  }
+  
+  /* BOTÃO */
+  #btn-curiosidade {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #btn-curiosidade:hover {
+    background: #0055cc;
+  }
+  
+  /* IMAGENS */
+  .imagens img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .imagens img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+  }
